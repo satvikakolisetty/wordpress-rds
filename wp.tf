@@ -47,6 +47,6 @@ resource "kubernetes_service" "wordpresslb" {
    port = 80
    target_port = 80
   }
-  type = "LoadBalancer"
+  type = "NodePort"
  }
 }
